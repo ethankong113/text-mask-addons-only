@@ -1,5 +1,7 @@
 # Text Mask Addons
 
+NOTE: This is a fork from [text-mask library](https://github.com/text-mask/text-mask) with the addons subdirectory only.
+
 These addons are ready-to-use pipes and masks that can be used with Text Mask.
 
 ## Installation
@@ -58,8 +60,8 @@ import emailMask from 'text-mask-addons/dist/emailMask'
 // ...then pass `emailMask` to the Text Mask component as the mask
 ```
 
-*Technical side note*: even though `emailMask` is passed as a `mask`, it is actually made of both a `mask` and a `pipe` bundled 
-together for convenience. The Text Mask component knows how to unwrap and separate the `pipe` and `mask` functions to use them. 
+*Technical side note*: even though `emailMask` is passed as a `mask`, it is actually made of both a `mask` and a `pipe` bundled
+together for convenience. The Text Mask component knows how to unwrap and separate the `pipe` and `mask` functions to use them.
 
 ## Pipes
 
@@ -88,7 +90,7 @@ set to `true`.
 import createAutoCorrectedDatePipe from 'text-mask-addons/dist/createAutoCorrectedDatePipe'
 
 const autoCorrectedDatePipe = createAutoCorrectedDatePipe('mm/dd/yyyy HH:MM')
-// As you can see in the line above, you can pass a string argument to `createAutoCorrectedDatePipe` 
+// As you can see in the line above, you can pass a string argument to `createAutoCorrectedDatePipe`
 // to give it the order of day, month, year, hour and minute in your `mask`.
 
 // ...now you can pass `autoCorrectedDatePipe` to the Text Mask component as the `pipe`
